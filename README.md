@@ -12,7 +12,7 @@ This project aims to create a Linux command in Bash language called "tacheron". 
 This problem is due to deamon on WSL and command "who".
 
 ### Installation : 
-You must initialize deamon service in your system.
+After cloning the directory, you must initialize deamon service in your system.
 The tree structure detailed above is created and the init_daemon file is called so that the demons_tacheron.sh script starts up as a service on your Linux system. You don't have to program anything. The program takes care of registering the service, putting it in the background, and activating it every time you start your system.
 
 ```bash
@@ -38,7 +38,7 @@ $ ./tacheron <-i | -l | --dell | help >
 
 • To manually edit, view and delete the __/etc/tacherontab__ or __/etc/tacheron/tacherontab\<user\>__ files:
 ```bash
-$ ./tacheron [ -u user] { -a | -r | -e }
+$ ./tacheron [ -u user] < -a | -r | -e >
 ```
 \-u user (ou --user) : Mention a specific user
 
